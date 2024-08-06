@@ -71,9 +71,6 @@
           <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-3">4</div>
           <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-4">5</div>
           <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">6</div>
-          <!-- <div class="grid-item bg-gray-500 rounded-xl" name="img-cat-6">7</div>
-          <div class="grid-item bg-gray-500 rounded-xl" name="img-cat-7">8</div>
-          <div class="grid-item bg-gray-500 rounded-xl" name="img-cat-8">9</div> -->
         </article>
       </section>
     <?php include_once("./footer.php");?>
