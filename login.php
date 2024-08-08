@@ -15,7 +15,7 @@
           <form action="#" method="post" class="flex flex-col mb-[10px]">
             <input type="email" name="email" id="floatingEmail" placeholder="Email" class="w-[405px] h-[58px] border-2 border-pastelBlue rounded-xl text-center mb-4">        
             <input type="password" name="password" id="floatingPassword" placeholder="Password" class="w-[405px] h-[58px] border-2 border-pastelBlue rounded-xl text-center mb-4">        
-            <button name="login-button"  id="floatingLogin" class="w-[405px] h-[58px] font-[570] bg-pastelBlue rounded-xl mb-2"><span class="font-[570]">Log in</span></button>
+            <button type="submit" name="submit" id="floatingLogin" class="w-[405px] h-[58px] font-[570] bg-pastelBlue rounded-xl mb-2"><span class="font-[570]">Log in</span></button>
             <a href="#"><p class="underline text-xs text-center">Forgot your password?</p></a>
             <p class="font-[570] h-fit leading-none text-center my-4">OR</p>
             <a href="sign-up.php" class="w-[405px] h-[58px] text-pastelBlue bg-halfBlack rounded-xl font-[570] mb-2 flex justify-center items-center"><span class="font-[570]">Sign Up</span></button></a>

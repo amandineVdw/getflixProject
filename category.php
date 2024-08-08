@@ -10,7 +10,85 @@
   <?php include_once("./header.php");?>
   
   <section class="container w-full mx-auto mt-[75px] mb-14">
-    <h1 name="name-category" class=" text-pastelBlue text-[56px] font-[570] uppercase mb-14">Action</h1>
+    <article class="flex items-center justify-between mb-14">
+      <h1 name="name-category" class=" text-pastelBlue text-[56px] font-[570] uppercase leading-none">Movies</h1>
+      <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="<?php echo (basename($_SERVER['PHP_SELF']) == 'category.php' && isset($_GET['genre'])) ? 'text-pastelBlue' : 'text-white'; ?> focus:ring-2 focus:outline-none focus:ring-gray-300 rounded-xl mr-4 inline-flex items-center leading-none h-[20px]" type="button">Genre<svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"></path>
+      </svg>
+      </button>
+      <div id="dropdownHover" class="z-10 bg-greyWhite divide-y divide-gray-100 rounded-xl shadow w-fit hidden px-2">
+        <article class="flex">
+          <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownHoverButton">
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">Action</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">Adventure</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">Animation</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">Biography</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">Comedy</a>
+            </li>
+          </ul>
+          <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownHoverButton">
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">Crime</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">Documentary</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">Drama</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">Family</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">Fantasy</a>
+            </li>
+          </ul>
+          <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownHoverButton">
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">Horror</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">History</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">Musical</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">Mystery</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">Romance</a>
+            </li>
+          </ul>
+          <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownHoverButton">
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">Sci-Fi</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">Sport</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">Thriller</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">War</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-300 hover:px-4 hover:py-2 rounded-xl">Western</a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </article>
     <article class="w-full grid grid-cols-[288.74px_288.74px_288.74px_288.74px_288.74px] grid-flow-row auto-rows-[388px] gap-6">
       <div class="bg-gray-500 rounded-xl" name="img-cat_01"></div>
       <div class="bg-gray-500 rounded-xl" name="img-cat_02"></div>
@@ -40,5 +118,6 @@
     </article>
   </section>
   <?php include_once("./footer.php");?>
+  <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 </html>

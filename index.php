@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.js" integrity="sha512-bkge924rHvzs8HYzPSjoL47QZU0PYng6QsMuo3xxmEtCeGsfIeDl6t4ATj+NxwUbwOEYKsGO8A5zIAkMXP+cHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Getflix</title>
   </head>
   <body class="bg-halfBlack h-screen w-screen">
@@ -20,60 +21,100 @@
           <img src="image/Lucky.png" alt="Lucky" name="img-hero_07" class="object-cover h-[652px] w-[190px] rounded-xl">
         </article>
       </section>
-      <!-- <section class="scroller w-full mt-12 mb-28">
-        <article class="w-full grid grid-rows-2 grid-flow-col auto-cols-min overflow-x-auto gap-6">
-          <div class="h-[388px] w-[388px] bg-pastelBlue rounded-xl p-4 flex flex-col justify-between">
-            <h1 name="category-01" class="text-white text-[56px] font-[570] uppercase break-words">Action</h1>
-            <img src="image/Arrow-Categorie.svg" alt="Arrow-Categorie" class="w-[72px] h-[72px] self-end">
-          </div>
-          <div class="bg-gray-500 h-[388px] w-[388px] rounded-xl" name="img-cat-3">0.1</div>
-          <div class="bg-gray-500 h-[388px] w-[288.74px] rounded-xl" name="img-cat-1">1</div>
-          <div class="bg-gray-500 h-[388px] w-[288.74px] rounded-xl" name="img-cat-2">2</div>
-          <div class="bg-gray-500 h-[388px] w-[388px] rounded-xl" name="img-cat-3">3</div>
-          <div class="bg-gray-500 h-[388px] w-[388px] rounded-xl" name="img-cat-3">4</div>
-          <div class="bg-gray-500 h-[388px] w-[288.74px] rounded-xl" name="img-cat-4">5</div>
-          <div class="bg-gray-500 h-[388px] w-[288.74px] rounded-xl" name="img-cat-5">6</div>
-          <div class="bg-gray-500 h-[388px] w-[388px] rounded-xl" name="img-cat-6">7</div>
-          <div class="bg-gray-500 h-[388px] w-[288.74px] rounded-xl" name="img-cat-7">8</div>
-          <div class="bg-gray-500 h-[388px] w-[288.74px] rounded-xl" name="img-cat-8">9</div>
-        </article>
-      </section> -->
-      <section class="w-full mb-14">
-        <article class="w-full h-fit flex space-x-6 overflow-x-scroll">
-          <div class="h-[388px] w-[388px] bg-pastelBlue rounded-xl p-4 flex flex-col justify-between mb-6">
-            <h1 name="category-01" class="text-white text-[56px] font-[570] uppercase break-words">Adventure</h1>
-            <a href="#" class="self-end"><img src="image/Arrow-Categorie.svg" alt="Arrow-Categorie" class="w-[72px] h-[72px]"></a>
-          </div>
-          <img src=" http://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg" class="bg-gray-500 shrink-0 h-[388px] w-[288.74px] rounded-xl mb-6 ml-6"></img>
-          <div class="bg-gray-500 shrink-0 h-[388px] w-[288.74px] rounded-xl" name="img-cat-3">3</div>
-          <div class="bg-gray-500 shrink-0 h-[388px] w-[388px] rounded-xl" name="img-cat-3">4</div>
-          <div class="bg-gray-500 shrink-0 h-[388px] w-[288.74px] rounded-xl" name="img-cat-3">5</div>
-        </article>
-        <article class="flex flex-nowrap space-x-6 overflow-x-auto">
-          <div class="bg-gray-500 shrink-0 h-[388px] w-[288.74px] rounded-xl" name="img-cat-4">5</div>
-          <div class="bg-gray-500 shrink-0 h-[388px] w-[288.74px] rounded-xl" name="img-cat-5">6</div>
-          <div class="bg-gray-500 shrink-0 h-[388px] w-[388px] rounded-xl" name="img-cat-6">7</div>
-          <div class="bg-gray-500 shrink-0 h-[388px] w-[288.74px] rounded-xl" name="img-cat-7">8</div>
-          <div class="bg-gray-500 shrink-0 h-[388px] w-[288.74px] rounded-xl" name="img-cat-8">9</div>
-          <div class="bg-gray-500 shrink-0 h-[388px] w-[288.74px] rounded-xl" name="img-cat-8">9</div>
+      <section class="cate-main w-full h-fit overflow-x-scroll mb-14"> 
+        <article class="grid1 h-full space-y-6">
+            <div class="grid-item grid-item--width2 bg-pastelBlue rounded-xl p-4 flex flex-col justify-between mt-6">
+              <h1 name="category-01" class="text-white text-[56px] font-[570] uppercase break-words">Movie<br>Top 10</h1>
+              <a href="#" class="self-end"><img src="image/Arrow-Categorie.svg" alt="Arrow-Categorie" class="w-[72px] h-[72px] self-end"></a> 
+            </div>
+            <div class="grid-item  bg-gray-500 rounded-xl ml-6" name="img-cat-3">1</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-1">2</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-2">3</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-3">4</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-3">5</div>
+            <div class="grid-item  bg-gray-500 rounded-xl ml-6" name="img-cat-4">6</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">7</div>
+            <div class="grid-item bg-gray-500 rounded-xl" name="img-cat-5">8</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-5">9</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">10</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">11</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-5">1</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">13</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-5">14</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">15</div>
         </article>
       </section>
-      <section class="w-full mb-14">
-        <article class="grid1 w-full h-fit space-y-6  overflow-x-auto">
-          <div class="grid-item grid-item--width2 bg-pastelBlue rounded-xl p-4 flex flex-col justify-between mt-6">
-            <h1 name="category-01" class="text-white text-[56px] font-[570] uppercase break-words">Action</h1>
-            <a href="#" class="self-end"><img src="image/Arrow-Categorie.svg" alt="Arrow-Categorie" class="w-[72px] h-[72px] self-end"></a> 
-          </div>
-          <div class="grid-item  bg-gray-500 rounded-xl ml-6" name="img-cat-3">0.1</div>
-          <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-1">1</div>
-          <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-2">2</div>
-          <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl" name="img-cat-3">3</div>
-          <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-3">4</div>
-          <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-4">5</div>
-          <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">6</div>
+      <section class="cate-main w-full h-fit overflow-x-scroll mb-14"> 
+        <article class="grid1 h-full space-y-6">
+            <div class="grid-item grid-item--width2 bg-pastelBlue rounded-xl p-4 flex flex-col justify-between mt-6">
+              <h1 name="category-01" class="text-white text-[56px] font-[570] uppercase break-words">Tv Shows Top 10</h1>
+              <a href="#" class="self-end"><img src="image/Arrow-Categorie.svg" alt="Arrow-Categorie" class="w-[72px] h-[72px] self-end"></a> 
+            </div>
+            <div class="grid-item  bg-gray-500 rounded-xl ml-6" name="img-cat-3">1</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-1">2</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-2">3</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-3">4</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-3">5</div>
+            <div class="grid-item  bg-gray-500 rounded-xl ml-6" name="img-cat-4">6</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">7</div>
+            <div class="grid-item bg-gray-500 rounded-xl" name="img-cat-5">8</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-5">9</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">10</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">11</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-5">1</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">13</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-5">14</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">15</div>
+        </article>
+      </section>
+      <section class="cate-main w-full h-fit overflow-x-scroll mb-14 p-0"> 
+        <article class="grid1 h-full space-y-6">
+            <div class="grid-item grid-item--width2 bg-pastelBlue rounded-xl p-4 flex flex-col justify-between mt-6">
+              <h1 name="category-01" class="text-white text-[56px] font-[570] uppercase break-words">Discover TV Shows</h1>
+              <a href="#" class="self-end"><img src="image/Arrow-Categorie.svg" alt="Arrow-Categorie" class="w-[72px] h-[72px] self-end"></a> 
+            </div>
+            <div class="grid-item  bg-gray-500 rounded-xl ml-6" name="img-cat-3">1</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-1">2</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-2">3</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-3">4</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-3">5</div>
+            <div class="grid-item  bg-gray-500 rounded-xl ml-6" name="img-cat-4">6</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">7</div>
+            <div class="grid-item bg-gray-500 rounded-xl" name="img-cat-5">8</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-5">9</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">10</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">11</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-5">1</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">13</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-5">14</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">15</div>
+        </article>
+      </section>
+      <section class="cate-main w-full h-fit overflow-x-scroll mb-14"> 
+        <article class="grid1 h-full space-y-6">
+            <div class="grid-item grid-item--width2 bg-pastelBlue rounded-xl p-4 flex flex-col justify-between mt-6">
+              <h1 name="category-01" class="text-white text-[56px] font-[570] uppercase break-words">Discover Movies</h1>
+              <a href="#" class="self-end"><img src="image/Arrow-Categorie.svg" alt="Arrow-Categorie" class="w-[72px] h-[72px] self-end"></a> 
+            </div>
+            <div class="grid-item  bg-gray-500 rounded-xl ml-6" name="img-cat-3">1</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-1">2</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-2">3</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-3">4</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-3">5</div>
+            <div class="grid-item  bg-gray-500 rounded-xl ml-6" name="img-cat-4">6</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">7</div>
+            <div class="grid-item bg-gray-500 rounded-xl" name="img-cat-5">8</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-5">9</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">10</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">11</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-5">1</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">13</div>
+            <div class="grid-item grid-item--width2 bg-gray-500 rounded-xl ml-6" name="img-cat-5">14</div>
+            <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-5">15</div>
         </article>
       </section>
     <?php include_once("./footer.php");?>
-    <script src="./masonry.pkgd.js"></script>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <!-- <script src="./masonry.pkgd.js"></script> -->
   </body>
 </html>
