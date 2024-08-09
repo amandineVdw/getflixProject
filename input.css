@@ -66,3 +66,6 @@ body:hover::-webkit-scrollbar-thumb, .cate-main:hover::-webkit-scrollbar-thumb {
 .grid-item--height2 { height: 488px; }
 .grid-item--height3 { height: 588px; }
 .grid-item--height4 { height: 688px; }
+@media (min-width: 640px) {
+  
+}

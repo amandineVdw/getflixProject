@@ -25,7 +25,7 @@
         <article class="grid1 h-full space-y-6">
             <div class="grid-item grid-item--width2 bg-pastelBlue rounded-xl p-4 flex flex-col justify-between mt-6">
               <h1 name="category-01" class="text-white text-[56px] font-[570] uppercase break-words">Movie<br>Top 10</h1>
-              <a href="#" class="self-end"><img src="image/Arrow-Categorie.svg" alt="Arrow-Categorie" class="w-[72px] h-[72px] self-end"></a> 
+              <a href="category.php?movies" class="self-end"><img src="image/Arrow-Categorie.svg" alt="Arrow-Categorie" class="w-[72px] h-[72px] self-end"></a> 
             </div>
             <div class="grid-item  bg-gray-500 rounded-xl ml-6" name="img-cat-3">1</div>
             <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-1">2</div>
@@ -48,7 +48,7 @@
         <article class="grid1 h-full space-y-6">
             <div class="grid-item grid-item--width2 bg-pastelBlue rounded-xl p-4 flex flex-col justify-between mt-6">
               <h1 name="category-01" class="text-white text-[56px] font-[570] uppercase break-words">Tv Shows Top 10</h1>
-              <a href="#" class="self-end"><img src="image/Arrow-Categorie.svg" alt="Arrow-Categorie" class="w-[72px] h-[72px] self-end"></a> 
+              <a href="category.php?series" class="self-end"><img src="image/Arrow-Categorie.svg" alt="Arrow-Categorie" class="w-[72px] h-[72px] self-end"></a> 
             </div>
             <div class="grid-item  bg-gray-500 rounded-xl ml-6" name="img-cat-3">1</div>
             <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-1">2</div>
@@ -70,8 +70,8 @@
       <section class="cate-main w-full h-fit overflow-x-scroll mb-14 p-0"> 
         <article class="grid1 h-full space-y-6">
             <div class="grid-item grid-item--width2 bg-pastelBlue rounded-xl p-4 flex flex-col justify-between mt-6">
-              <h1 name="category-01" class="text-white text-[56px] font-[570] uppercase break-words">Discover TV Shows</h1>
-              <a href="#" class="self-end"><img src="image/Arrow-Categorie.svg" alt="Arrow-Categorie" class="w-[72px] h-[72px] self-end"></a> 
+              <h1 name="category-01" class="text-white text-[56px] font-[570] uppercase break-words">Discover Movies</h1>
+              <a href="category.php?movies" class="self-end"><img src="image/Arrow-Categorie.svg" alt="Arrow-Categorie" class="w-[72px] h-[72px] self-end"></a> 
             </div>
             <div class="grid-item  bg-gray-500 rounded-xl ml-6" name="img-cat-3">1</div>
             <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-1">2</div>
@@ -93,8 +93,8 @@
       <section class="cate-main w-full h-fit overflow-x-scroll mb-14"> 
         <article class="grid1 h-full space-y-6">
             <div class="grid-item grid-item--width2 bg-pastelBlue rounded-xl p-4 flex flex-col justify-between mt-6">
-              <h1 name="category-01" class="text-white text-[56px] font-[570] uppercase break-words">Discover Movies</h1>
-              <a href="#" class="self-end"><img src="image/Arrow-Categorie.svg" alt="Arrow-Categorie" class="w-[72px] h-[72px] self-end"></a> 
+              <h1 name="category-01" class="text-white text-[56px] font-[570] uppercase break-words">Discover TV Shows</h1>
+              <a href="category.php?series" class="self-end"><img src="image/Arrow-Categorie.svg" alt="Arrow-Categorie" class="w-[72px] h-[72px] self-end"></a> 
             </div>
             <div class="grid-item  bg-gray-500 rounded-xl ml-6" name="img-cat-3">1</div>
             <div class="grid-item bg-gray-500 rounded-xl ml-6" name="img-cat-1">2</div>
